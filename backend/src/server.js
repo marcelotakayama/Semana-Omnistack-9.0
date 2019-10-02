@@ -4,7 +4,16 @@ const express = require ('express');
 // Estância da aplicação
 const app = express();
 
-app.post('/users', (req, res) => {
+
+// Modelo de requisição que pode ser feita de diversos modelos:
+// (req, res): Usado para indicar que o método possui uma requisição e uma resposta
+
+// GET: Serve para poder pegar/Renderizar alguma página
+// POST: Serve para enviar os dados da requisição]
+// PUT: Serve para editar os dados já existentes
+// DELETE: Serve para deletar os dados já existentes
+
+app.get('/users', (req, res) => {
     
     res.json({ id: req.params.id });
 });
