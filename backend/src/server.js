@@ -4,8 +4,9 @@ const express = require ('express');
 // Estância da aplicação
 const app = express();
 
-app.get('/', (req, res) => {
-    res.json({ massage: "Hello World" });
+app.post('/users', (req, res) => {
+    
+    res.json({ id: req.params.id });
 });
 
 // Porta em que a aplicação está sendo ouvida
