@@ -5,7 +5,7 @@ const express = require ('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Hello World');
+    res.json({ massage: "Hello World" });
 });
 
 // Porta em que a aplicação está sendo ouvida
