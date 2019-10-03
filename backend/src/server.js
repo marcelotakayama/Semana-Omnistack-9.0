@@ -13,6 +13,10 @@ const app = express();
 // PUT: Serve para editar os dados já existentes
 // DELETE: Serve para deletar os dados já existentes
 
+// Comentários sobre a palestra de nodejs:
+// Se você printa os bytecodes na hora de executar o arquivo em node, o programa irá 
+// Mostrar os bytecodes com mais detalhes
+
 app.get('/users', (req, res) => {
     
     res.json({ id: req.params.id });
